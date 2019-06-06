@@ -1,0 +1,135 @@
+/* -------- Lightbox Styles ------- */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#lightbox.is-active {
+  display: flex;
+}
+
+.lightbox-content {
+  width: 80%;
+  height: 80%;
+}
+
+.lightbox-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.86);
+}
+
+/* -------- Slider Styles ------- */
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.swiper-overlay {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0.2;
+  z-index: 1000;
+  position: absolute;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.89;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* -------- Gallery Styles ------- */
+
+.gallery-item {
+  padding: 50px 0px;
+}
+
+.gallery-item h3 {
+  padding-bottom: 18px;
+  color: #2d783d;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.gallery-item a {
+  display: block;
+  padding-top: 12px;
+  color: #2d783d;
+  font-weight: 600;
+}
+
+.gallery-item .column.is-half {
+  flex-wrap: wrap;
+}
+
+.gallery-item .card {
+  margin: 0px;
+}
+@media only screen and (min-width: 769px) {
+  .gallery-item .card {
+    width: 90%;
+    float: right;
+    margin-top: -33px;
+  }
+}
+
+.gallery-list {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 769px) {
+  .galley-list {
+    justify-content: left;
+  }
+}
+
+.gallery-item .gallery-thumb {
+  flex: 1 2 80px;
+  height: 80px;
+  margin: 3px;
+}
+
+.gallery-item .featured-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 3px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
